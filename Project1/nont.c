@@ -3,7 +3,7 @@
 int main()
 
 {
-
+	printf("≤‚ ‘”¶”√")£ª
 
 	system("pause");
 	return 0;
