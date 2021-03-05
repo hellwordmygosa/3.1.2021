@@ -80,7 +80,7 @@ void swap(int *z, int *v)
 
 
 }
-
+//用指针交换两个数的大小
 int main()
 {
 	int a = 10;
