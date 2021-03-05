@@ -159,52 +159,264 @@
 //}
 
 //二分查找
-#include<stdio.h>
-#include<Windows.h>
+//#include<stdio.h>
+//#include<Windows.h>
+//
+//
+//int binary_search(int arr[], int k,int sz)
+//{
+//	int left = 0;
+//	//int sz = sizeof(arr) / sizeof(arr[0]);
+//	int right = sz - 1;
+//
+//	while (left<=right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (mid < k)
+//		{
+//			left = mid + 1;
+//
+//		}
+//		else if (mid>k)
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			return mid;
+//		}
+//
+//	}
+//
+//     return -1;
+//}
+//int main()
+//{
+//	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int k = 7;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int	bin=binary_search(arr, k,sz);
+//	if (bin == -1)
+//	{
+//		printf("没有找到\n");
+//	}
+//	else
+//	{
+//		printf("%d \n", bin);
+//	}
+//
+//	system("pause");
+//	return 0;
+//}
+////求一个素数
+//#include<stdio.h>
+//#include<Windows.h>
+//
+//int is_prime(int s)
+//{
+//	int j = 0;
+//	for (j = 2; j < s; j++)
+//	{
+//		if (s%j == 0)
+//			return 0;
+//	}
+//	return 1;
+//
+//
+//}
+//int main()
+//{
+//
+//	int i;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		
+//		int pe = is_prime(i);
+//		if (pe == 1)
+//			printf("%d ", i);
+//		
+//	}
+//
+//
+//
+//
+//
+//
+//	system("pause");
+//	return 0;
+//}
+////判断是不是闰年
+//#include<stdio.h>
+//#include<Windows.h>
+//
+//int leap_year(int y)
+//{
+//	if ((y % 4 == 0) && (y % 100 != 0)||(y%400==0))
+//	{
+//		return 1;
+//	}
+//}
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1000; i <= 2000; i++)
+//	{
+//		if ((leap_year(i)) == 1)
+//		{
+//		
+//			printf("%d ", i);
+//		}
+//	}
+//
+//
+//	system("pause");
+//	return 0;
+//}
+////二分查找
+//#include<stdio.h>
+//#include<Windows.h>
+//
+//int binary_search(int arr[], int y,int sz)
+//{
+//	int left = 0;
+//	
+//	int right = sz - 1;
+//	while (left <= right)
+//	{
+//		int mid = (left + right) / 2;
+//		if (mid > y)
+//		{
+//			right = mid - 1;
+//		}
+//		else if (mid < y)
+//		{
+//			left = mid + 1;
+//		}
+//		else
+//		{
+//			return mid;
+//		}
+//	}
+//	return -1;
+//
+//}
+//
+//int main()
+//{
+//	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int k = 8;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int pe = binary_search(arr, k,sz);
+//	if (pe == -1)
+//	{
+//		printf("没有找到\n");
+//	}
+//	else
+//	{
+//		printf("%d ", pe);
+//	}
+//	
+//
+//
+//
+//	system("pause");
+//	return 0;
+//}
 
 
-int binary_search(int arr[], int k,int sz)
-{
-	int left = 0;
-	//int sz = sizeof(arr) / sizeof(arr[0]);
-	int right = sz - 1;
+//调用一次函数num+1计数器
+//#include<stdio.h>
+//#include<Windows.h>
+//
+//void Add(int *i)
+//{
+//	(*i)++;
+//
+//}
+//
+//int main()
+//{
+//
+//	int num = 0;
+//	Add(&num);
+//	printf("%d\n", num);
+//	Add(&num);
+//	printf("%d\n", num);
+//	Add(&num);
+//	printf("%d\n", num);
+//	Add(&num);
+//	printf("%d\n", num);
+//	system("pause");
+//	return 0;
+//}
 
-	while (left<=right)
-	{
-		int mid = (left + right) / 2;
-		if (mid < k)
-		{
-			left = mid + 1;
+//嵌套函数调用
+//#include<stdio.h>
+//#include<Windows.h>
+//
+//void haha()
+//{
+//	printf("haha\n");
+//
+//}
+//
+//void new_line()
+//{
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		haha();
+//	}
+//}
+//int main()
+//{
+//
+//
+//	new_line();
+//
+//
+//	system("pause");
+//	return 0;
+//}
+//#include<stdio.h>
+//#include<Windows.h>
+//int main()
+//{
+//
+//	printf("%d\n", printf("%d\n", printf("%d\n", 43)));
+//	system("pause");
+//	return 0;
+//}
+//函数的声明
 
-		}
-		else if (mid>k)
-		{
-			right = mid - 1;
-		}
-		else
-		{
-			return mid;
-		}
+//#include<stdio.h>
+//#include<Windows.h>
+//#include"add.h"
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int z = Add(a, b);
+//	printf("%d\n", z);
+//	system("pause");
+//	return 0;
+//}
 
-	}
-
-     return -1;
-}
-int main()
-{
-	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-	int k = 7;
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	int	bin=binary_search(arr, k,sz);
-	if (bin == -1)
-	{
-		printf("没有找到\n");
-	}
-	else
-	{
-		printf("%d \n", bin);
-	}
-
-	system("pause");
-	return 0;
-}
+//#include <stdio.h>
+//#include<Windows.h>
+//int main(){
+//	enum week{ Mon=1, Tues, Wed, Thurs, Fri, Sat, Sun } day;
+//	scanf("%d", &day);
+//	switch (day){
+//	case Mon: puts("Monday"); break;
+//	case Tues: puts("Tuesday"); break;
+//	case Wed: puts("Wednesday"); break;
+//	case Thurs: puts("Thursday"); break;
+//	case Fri: puts("Friday"); break;
+//	case Sat: puts("Saturday"); break;
+//	case Sun: puts("Sunday"); break;
+//	default: puts("Error!");
+//	}
+//	system("pause");
+//	return 0;
+//}
