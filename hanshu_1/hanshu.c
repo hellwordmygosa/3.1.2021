@@ -421,37 +421,52 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-#include<Windows.h>
-
+//#include<stdio.h>
+//#include<Windows.h>
+//
 //int main()
 //{
-//	int k = 6;
+//	int k = 7;
 //	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 //	int ligt = 0;
 //	int sz = sizeof(arr) / sizeof(arr[0]);
 //	int right = sz - 1;
-//	int min;
+//	int min=0;
 //	while (ligt <= right)
 //	{
 //		min = (ligt + right) / 2;
-//		if (min > k)
+//		if (arr[min] > k)
 //		{
 //			right = min - 1;
 //		}
-//		else if (min < k)
+//		else if (arr[min] < k)
 //		{
-//			right = min + 1;
+//			ligt = min + 1;
 //		}
 //		else
 //		{
-//			//printf("%d", min);
 //			
+//			break;
 //		}
-//	
+//		
 //	}
-//	
+//	printf("%d\n", min);
 //
 //	system("pause");
 //	return 0;
 //}
+
+
+#include<stdio.h>
+#include<Windows.h>
+int main()
+{
+
+
+
+
+
+
+	system("pause");
+	return 0;
+}
