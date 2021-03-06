@@ -420,3 +420,38 @@
 //	system("pause");
 //	return 0;
 //}
+
+#include<stdio.h>
+#include<Windows.h>
+
+//int main()
+//{
+//	int k = 6;
+//	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int ligt = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int right = sz - 1;
+//	int min;
+//	while (ligt <= right)
+//	{
+//		min = (ligt + right) / 2;
+//		if (min > k)
+//		{
+//			right = min - 1;
+//		}
+//		else if (min < k)
+//		{
+//			right = min + 1;
+//		}
+//		else
+//		{
+//			//printf("%d", min);
+//			
+//		}
+//	
+//	}
+//	
+//
+//	system("pause");
+//	return 0;
+//}
